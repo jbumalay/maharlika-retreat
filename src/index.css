@@ -89,9 +89,8 @@ body.no-scroll { overflow: hidden; overscroll-behavior: none; touch-action: none
 .room-image-link img { width: 100%; height: 430px; object-fit: cover; transition: transform 500ms cubic-bezier(.22,1,.36,1); }
 .room-image-link:hover img { transform: scale(1.018); }
 .room-card-copy { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
-.room-number { color: var(--timber); font-family: var(--font-display); font-size: 18px; }
 .room-card-copy h3, .discovery-copy h2 { margin-top: 12px; font-size: clamp(28px,3vw,42px); }
-.room-card-copy > p:not(.room-number), .discovery-copy > p { max-width: 48ch; margin-top: 20px; color: var(--muted); }
+.room-card-copy > p, .discovery-copy > p { max-width: 48ch; margin-top: 20px; color: var(--muted); }
 .room-meta { display: flex; margin-top: 24px; gap: 28px; font-size: 14px; font-weight: 600; }
 .room-card-copy ul, .discovery-copy ul, .room-story-copy ul { display: flex; margin: 18px 0 0; padding: 0; gap: 10px 24px; flex-wrap: wrap; color: var(--muted); font-size: 14px; list-style: none; }
 .room-card-copy li::before, .discovery-copy li::before, .room-story-copy li::before { margin-right: 8px; color: var(--timber); content: '—'; }
@@ -136,7 +135,6 @@ body.no-scroll { overflow: hidden; overscroll-behavior: none; touch-action: none
 .discovery-row:nth-child(even) .discovery-image { order: 2; }
 .discovery-image { position: relative; }
 .discovery-image img { width: 100%; height: 550px; object-fit: cover; }
-.discovery-image > span { position: absolute; right: 0; bottom: 0; padding: 16px 20px; background: var(--limestone); color: var(--timber); font-family: var(--font-display); }
 .room-specs { display: grid; margin: 30px 0 0; grid-template-columns: repeat(3,1fr); border-block: 1px solid var(--border); }
 .room-specs div { padding: 18px 12px 18px 0; }
 .room-specs dt { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }

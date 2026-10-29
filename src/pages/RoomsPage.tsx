@@ -13,11 +13,10 @@ export function RoomsPage({ navigate }: { navigate: Navigate }) {
       </section>
 
       <section className="room-discovery section-shell" aria-label="Room collection">
-        {rooms.map((room, index) => (
+        {rooms.map((room) => (
           <article className="discovery-row" key={room.slug}>
             <div className="discovery-image">
               <img src={room.image} alt={`${room.name}, ${room.shortDescription.toLowerCase()}`} />
-              <span>0{index + 1}</span>
             </div>
             <div className="discovery-copy">
               <h2>{room.name}</h2>

@@ -38,7 +38,7 @@ export function HomePage({ navigate }: { navigate: Navigate }) {
           <p>Three distinct ways to settle in, each with an illustrative footprint and a different relationship to the landscape.</p>
         </header>
         <div className="room-list">
-          {rooms.map((room, index) => (
+          {rooms.map((room) => (
             <article className="room-card" key={room.slug}>
               <AppLink
                 href={`/rooms/${room.slug}`}
@@ -49,7 +49,6 @@ export function HomePage({ navigate }: { navigate: Navigate }) {
                 <img src={room.image} alt="" loading="lazy" />
               </AppLink>
               <div className="room-card-copy">
-                <p className="room-number">0{index + 1}</p>
                 <h3>{room.name}</h3>
                 <p>{room.shortDescription}</p>
                 <div className="room-meta">

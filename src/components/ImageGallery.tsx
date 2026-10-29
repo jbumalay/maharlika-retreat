@@ -57,7 +57,7 @@ export function ImageGallery({ images, label = 'Room image gallery' }: { images:
         </button>
         <div className="gallery-controls" aria-label="Gallery controls">
           <button type="button" onClick={() => move(-1)} aria-label="Previous image">←</button>
-          <span>{String(active + 1).padStart(2, '0')} / {String(images.length).padStart(2, '0')}</span>
+          <span>{active + 1} / {images.length}</span>
           <button type="button" onClick={() => move(1)} aria-label="Next image">→</button>
         </div>
       </div>
