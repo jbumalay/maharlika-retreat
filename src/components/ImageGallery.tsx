@@ -13,15 +13,30 @@ export function ImageGallery({ images, label = 'Room image gallery' }: { images:
   useEffect(() => {
     if (!lightbox) return
     closeButton.current?.focus()
+    const scrollY = window.scrollY
+    document.body.dataset.scrollY = String(scrollY)
+    document.body.style.position = 'fixed'
+    document.body.style.top = `-${scrollY}px`
+    document.body.style.width = '100%'
+    document.body.classList.add('no-scroll')
+    document.documentElement.classList.add('no-scroll')
     function keydown(event: KeyboardEvent) {
       if (event.key === 'Escape') setLightbox(false)
       if (event.key === 'ArrowLeft') move(-1)
       if (event.key === 'ArrowRight') move(1)
     }
-    document.body.classList.add('no-scroll')
     window.addEventListener('keydown', keydown)
     return () => {
+      const savedScrollY = document.body.dataset.scrollY
+      if (savedScrollY) {
+        document.body.style.position = ''
+        document.body.style.top = ''
+        document.body.style.width = ''
+        delete document.body.dataset.scrollY
+        window.scrollTo(0, parseInt(savedScrollY, 10))
+      }
       document.body.classList.remove('no-scroll')
+      document.documentElement.classList.remove('no-scroll')
       window.removeEventListener('keydown', keydown)
       opener.current?.focus()
     }

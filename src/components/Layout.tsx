@@ -67,7 +67,15 @@ export function SiteHeader({ path, navigate }: { path: string; navigate: Navigat
 
   useEffect(() => {
     document.body.classList.toggle('no-scroll', open)
+    document.documentElement.classList.toggle('no-scroll', open)
     if (!open) return
+
+    // Lock background scroll (position: fixed technique for iOS Safari / mobile)
+    const scrollY = window.scrollY
+    document.body.dataset.scrollY = String(scrollY)
+    document.body.style.position = 'fixed'
+    document.body.style.top = `-${scrollY}px`
+    document.body.style.width = '100%'
 
     const container = menuRef.current
     const first = container?.querySelector<HTMLElement>('a[href], button:not([disabled])')
@@ -98,7 +106,17 @@ export function SiteHeader({ path, navigate }: { path: string; navigate: Navigat
     window.addEventListener('keydown', onKeydown)
     return () => {
       window.removeEventListener('keydown', onKeydown)
+      // Restore background scroll
+      const savedScrollY = document.body.dataset.scrollY
+      if (savedScrollY) {
+        document.body.style.position = ''
+        document.body.style.top = ''
+        document.body.style.width = ''
+        delete document.body.dataset.scrollY
+        window.scrollTo(0, parseInt(savedScrollY, 10))
+      }
       document.body.classList.remove('no-scroll')
+      document.documentElement.classList.remove('no-scroll')
     }
   }, [open])
 
