@@ -16,17 +16,6 @@ export function HomePage({ navigate }: { navigate: Navigate }) {
         </div>
         <div className="hero-frame">
           <img src="/images/hero.jpg" alt="Low tropical villa framed by dense trees and a still pool" />
-          <aside className="hero-panel">
-            <p>Casa Amihan</p>
-            <div>
-              <span>Three room studies</span>
-              <span>An imagined coastal setting</span>
-              <span>Inquiries, not instant booking</span>
-            </div>
-            <AppLink href="/rooms/garden-suite" navigate={navigate}>
-              Begin with the Garden Suite <ArrowIcon />
-            </AppLink>
-          </aside>
         </div>
       </section>
 
