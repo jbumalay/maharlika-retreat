@@ -27,7 +27,7 @@ export function HomePage({ navigate }: { navigate: Navigate }) {
         <div className="story-copy">
           <p className="context-line">The idea</p>
           <h2>Space to arrive. Time to unwind.</h2>
-          <p>Casa Amihan imagines the kind of place where architecture recedes and the day opens up. Rooms sit low in the landscape. Doors stay open to shifting light, garden sound, and warm air.</p>
+          <p>Maharlika Retreat imagines the kind of place where architecture recedes and the day opens up. Rooms sit low in the landscape. Doors stay open to shifting light, garden sound, and warm air.</p>
           <p>Nothing here is presented as a real service. It is a study in how a small coastal retreat might feel: tactile, generous, and close to the elements.</p>
         </div>
       </section>
@@ -68,7 +68,7 @@ export function HomePage({ navigate }: { navigate: Navigate }) {
       <section id="experiences" className="rhythm-section">
         <div className="section-shell">
           <header className="section-heading">
-            <p className="context-line">A day at Casa Amihan</p>
+            <p className="context-line">A day at Maharlika Retreat</p>
             <h2>Let the day find its own rhythm.</h2>
           </header>
           <div className="rhythm-grid">

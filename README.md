@@ -1,12 +1,12 @@
-# Casa Amihan
+# Maharlika Retreat
 
 A fictional tropical retreat concept — an editorial hospitality website built as a **portfolio sample project**.
 
-> **Note:** Casa Amihan is an imagined property. No real hotel, booking service, or reservation system is represented. All room specifications, amenities, photography, and inquiry flows are illustrative content for demonstration purposes.
+> **Note:** Maharlika Retreat is an imagined property. No real hotel, booking service, or reservation system is represented. All room specifications, amenities, photography, and inquiry flows are illustrative content for demonstration purposes.
 
 ## Overview
 
-Casa Amihan explores how a small coastal retreat might feel online: tactile, generous, and close to the elements. The site's job is to make the atmosphere tangible, clarify the difference between three room studies, and lead to a transparent demo inquiry flow.
+Maharlika Retreat explores how a small coastal retreat might feel online: tactile, generous, and close to the elements. The site's job is to make the atmosphere tangible, clarify the difference between three room studies, and lead to a transparent demo inquiry flow.
 
 The design follows an **Architectural Editorial Frame** — a broad landscape image intersected by a narrow canopy-green stay-planning panel — with flat, measured, quiet supporting layouts and no ratings, rates, awards, urgency, or fake contact details.
 

@@ -52,14 +52,14 @@ export default function App() {
 
   useEffect(() => {
     const titles: Record<string, string> = {
-      '/': 'Casa Amihan — A fictional tropical retreat',
-      '/rooms': 'Rooms — Casa Amihan',
-      '/rooms/garden-suite': 'Garden Suite — Casa Amihan',
-      '/rooms/canopy-room': 'Canopy Room — Casa Amihan',
-      '/rooms/open-air-villa': 'Open-Air Villa — Casa Amihan',
-      '/contact': 'Stay inquiry — Casa Amihan',
+      '/': 'Maharlika Retreat — A fictional tropical retreat',
+      '/rooms': 'Rooms — Maharlika Retreat',
+      '/rooms/garden-suite': 'Garden Suite — Maharlika Retreat',
+      '/rooms/canopy-room': 'Canopy Room — Maharlika Retreat',
+      '/rooms/open-air-villa': 'Open-Air Villa — Maharlika Retreat',
+      '/contact': 'Stay inquiry — Maharlika Retreat',
     }
-    document.title = titles[location.path] ?? 'Page not found — Casa Amihan'
+    document.title = titles[location.path] ?? 'Page not found — Maharlika Retreat'
   }, [location.path])
 
   return <PageShell path={location.path} navigate={navigate}>{page}</PageShell>

@@ -132,7 +132,7 @@ export function SiteHeader({ path, navigate }: { path: string; navigate: Navigat
     <header className={`site-header ${isHome ? 'site-header--overlay' : ''}`}>
       <div className="header-inner">
         <AppLink href="/" navigate={navigate} className="wordmark" current={isHome}>
-          Casa Amihan
+          Maharlika Retreat
         </AppLink>
         <nav className="desktop-nav" aria-label="Main navigation">
           <AppLink href="/rooms" navigate={navigate} current={path.startsWith('/rooms')}>
@@ -176,7 +176,7 @@ export function SiteHeader({ path, navigate }: { path: string; navigate: Navigat
         }}
       >
         <AppLink href="/" navigate={navigate} className="wordmark mobile-menu-wordmark" id="mobile-menu-wordmark" current={path === '/'}>
-          Casa Amihan
+          Maharlika Retreat
         </AppLink>
         <nav aria-label="Mobile navigation">
           <a
@@ -230,7 +230,7 @@ export function SiteFooter({ navigate }: { navigate: Navigate }) {
     <footer className="site-footer">
       <div className="footer-grid">
         <div>
-          <AppLink href="/" navigate={navigate} className="wordmark">Casa Amihan</AppLink>
+          <AppLink href="/" navigate={navigate} className="wordmark">Maharlika Retreat</AppLink>
           <p>A quiet tropical retreat imagined for the Philippine coast.</p>
         </div>
         <nav aria-label="Footer navigation">
@@ -247,7 +247,7 @@ export function SiteFooter({ navigate }: { navigate: Navigate }) {
         </nav>
       </div>
       <div className="footer-base">
-        <p>Casa Amihan is a fictional concept project. No property or booking service is represented.</p>
+        <p>Maharlika Retreat is a fictional concept project. No property or booking service is represented.</p>
         <p>Designed as a portfolio prototype.</p>
       </div>
     </footer>
