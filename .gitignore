@@ -37,3 +37,6 @@ Thumbs.db
 .vite-temp/
 .vite/
 node_modules/.vite/
+
+# Portfolio screenshots (local only)
+screenshots/
