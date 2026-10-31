@@ -1,22 +1,45 @@
 # Maharlika Retreat
 
-A fictional tropical retreat concept — an editorial hospitality website built as a **portfolio sample project**.
+A fictional tropical retreat concept designed as a polished editorial hospitality website built with React, TypeScript, and Vite.
 
-> **Note:** Maharlika Retreat is an imagined property. No real hotel, booking service, or reservation system is represented. All room specifications, amenities, photography, and inquiry flows are illustrative content for demonstration purposes.
+> Maharlika Retreat is a concept project for portfolio and design exploration. It does not represent a real hotel or booking experience.
 
 ## Overview
 
-Maharlika Retreat explores how a small coastal retreat might feel online: tactile, generous, and close to the elements. The site's job is to make the atmosphere tangible, clarify the difference between three room studies, and lead to a transparent demo inquiry flow.
+Maharlika Retreat is a design-forward, hospitality-inspired experience that explores how a small coastal getaway might feel online: warm, tactile, calm, and immersive. The project focuses on atmosphere and storytelling rather than conversion tactics, using layered typography, large landscape photography, and a restrained editorial layout.
 
-The design follows an **Architectural Editorial Frame** — a broad landscape image intersected by a narrow canopy-green stay-planning panel — with flat, measured, quiet supporting layouts and no ratings, rates, awards, urgency, or fake contact details.
+This project was built to showcase:
+
+- a luxury-but-minimal visual identity
+- strong editorial composition and spacing systems
+- immersive room storytelling for a boutique retreat concept
+- responsive, accessible UI patterns in a multi-page experience
+- a front-end portfolio sample without a real booking backend
+
+## Project goals
+
+- Design a calm, premium hospitality experience rooted in natural textures and coastal living
+- Present three distinct room concepts with clear identity and storytelling
+- Build a smooth front-end experience with strong information hierarchy and modular layout patterns
+- Keep the interface accessible, responsive, and focused on atmosphere over sales pressure
+
+## Features
+
+- Multi-page experience for home, rooms, room details, and inquiry
+- Editorial visual style with warm earth tones and botanical accents
+- Three room studies with distinct characteristics and amenities
+- Interactive photo gallery with keyboard support and focus management
+- Demo inquiry form integrated into the retreat brand narrative
+- Accessible navigation, semantic structure, and reduced-motion transitions
 
 ## Tech stack
 
-- [React 19](https://react.dev/) + [Vite 8](https://vitejs.dev/)
-- [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/vite`
-- TypeScript
-- Playfair Display (editorial headings) + Source Sans 3 (body / UI)
-- No runtime dependencies beyond React
+- [React 19](https://react.dev/)
+- [Vite 8](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
+- [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3)
 
 ## Getting started
 
@@ -25,54 +48,70 @@ npm install
 npm run dev
 ```
 
-The dev server runs on the port set by the `PORT` environment variable (default `8443`).
+The app runs on the port defined by the `PORT` environment variable, with a default of `8443`.
 
-### Scripts
+## Available scripts
 
 | Script | Description |
-|--------|-------------|
-| `npm run dev` | Start the Vite dev server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview the production build |
-| `npm run format` | Format with oxfmt |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Build the project for production |
+| `npm run preview` | Preview the built app locally |
+| `npm run format` | Format the project with `oxfmt` |
 
 ## Project structure
 
-```
-src/
-├── main.tsx              # React entrypoint
-├── App.tsx               # Client-side router and page shell
-├── index.css             # Global styles and Tailwind v4 design tokens
-├── components/
-│   ├── Layout.tsx        # AppLink, ButtonLink, SiteHeader, Breadcrumb, Footer, PageShell
-│   ├── ImageGallery.tsx  # Room gallery with lightbox
-│   └── InquiryForm.tsx   # Demo inquiry form
-├── pages/
-│   ├── HomePage.tsx
-│   ├── RoomsPage.tsx
-│   ├── RoomDetailPage.tsx
-│   └── ContactPage.tsx
-└── data/
-    └── rooms.ts          # Room data (3 room studies)
-public/
-└── images/               # Editorial photography
+```text
+.
+├── LICENSE
+├── README.md
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── public/
+│   └── images/
+├── src/
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   ├── components/
+│   │   ├── ImageGallery.tsx
+│   │   ├── InquiryForm.tsx
+│   │   └── Layout.tsx
+│   ├── data/
+│   │   └── rooms.ts
+│   └── pages/
+│       ├── ContactPage.tsx
+│       ├── HomePage.tsx
+│       ├── RoomDetailPage.tsx
+│       └── RoomsPage.tsx
+├── MAHARLIKA-RETREAT.md
+└── screenshots/   # local preview assets used during development
 ```
 
 ## Design direction
 
-- **Colors:** Limestone `#F3F0E7` (ground) · Canopy `#253D32` (anchors) · Sage `#B5C3A2` · Timber `#C38D62` · Charcoal `#30352F`
-- **Type:** Playfair Display for editorial headings; Source Sans 3 for navigation, body copy, labels, and controls
-- **Shape:** 4px radius on controls; square image corners; borders and spacing do the separating
-- **Layout:** left-aligned, asymmetric editorial grids; prose kept between 45–70 characters
+The design language is intentionally restrained and atmospheric:
 
-## Accessibility
+- limestone and warm neutral surfaces
+- deep canopy greens and natural wood textures
+- large editorial headings with quiet support typography
+- balanced asymmetry and generous whitespace
+- content-driven storytelling without noisy sales messaging
 
-- Skip-to-content link, semantic landmarks, and breadcrumb navigation
-- Visible `:focus-visible` indicators (3px)
-- Form labels, `aria-invalid`, and `aria-describedby` error messaging
-- Keyboard-operable gallery (Escape, arrow keys) and mobile menu (Escape, focus trap)
-- `prefers-reduced-motion` handling for all transitions
+## Accessibility notes
+
+- semantic landmark structure and clear reading order
+- visible keyboard focus styling
+- labeled form controls and validation feedback
+- keyboard-friendly gallery and navigation behavior
+- reduced-motion support for transitions and animations
 
 ## License
 
 [MIT](./LICENSE) © 2026 Jerome Andrei Abumalay
+
+## Notes
+
+This project is best understood as a curated front-end concept and design exercise. It demonstrates how a boutique retreat brand can be translated into a responsive web experience while emphasizing editorial craft, tone, and minimal interaction design.
