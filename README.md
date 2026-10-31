@@ -63,31 +63,43 @@ The app runs on the port defined by the `PORT` environment variable, with a defa
 
 ```text
 .
+├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── index.html
 ├── package.json
+├── package-lock.json
 ├── tsconfig.json
 ├── vite.config.ts
 ├── public/
+│   ├── favicon.svg
 │   └── images/
-├── src/
-│   ├── App.tsx
-│   ├── index.css
-│   ├── main.tsx
-│   ├── components/
-│   │   ├── ImageGallery.tsx
-│   │   ├── InquiryForm.tsx
-│   │   └── Layout.tsx
-│   ├── data/
-│   │   └── rooms.ts
-│   └── pages/
-│       ├── ContactPage.tsx
-│       ├── HomePage.tsx
-│       ├── RoomDetailPage.tsx
-│       └── RoomsPage.tsx
-├── MAHARLIKA-RETREAT.md
-└── screenshots/   # local preview assets used during development
+│       ├── canopy-room.jpg
+│       ├── coast.jpg
+│       ├── garden-exterior.jpg
+│       ├── garden-light.jpg
+│       ├── garden-path.jpg
+│       ├── garden-room.jpg
+│       ├── hero.jpg
+│       ├── interior-detail.jpg
+│       ├── open-air-villa.jpg
+│       └── water-courtyard.jpg
+└── src/
+    ├── App.tsx
+    ├── index.css
+    ├── main.tsx
+    ├── vite-env.d.ts
+    ├── components/
+    │   ├── ImageGallery.tsx
+    │   ├── InquiryForm.tsx
+    │   └── Layout.tsx
+    ├── data/
+    │   └── rooms.ts
+    └── pages/
+        ├── ContactPage.tsx
+        ├── HomePage.tsx
+        ├── RoomDetailPage.tsx
+        └── RoomsPage.tsx
 ```
 
 ## Design direction
